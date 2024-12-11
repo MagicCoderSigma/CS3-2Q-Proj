@@ -1,0 +1,296 @@
+/*For body*/
+
+body, * {
+	align-content: center;
+	color: white;
+	font-family: "sans serif";
+	margin: 0;
+}
+
+body {
+	background-color: black;
+}
+
+hr {
+	border-color: gray;
+}
+
+/*For all links*/
+
+a {
+	text-decoration: none;
+	border-radius: 25px;
+}
+
+a:hover {
+	color: gray;
+	animation: linkshover 0.1s;
+}
+
+a:active {
+	color: #880808;
+	animation: linksactive 0.1s;
+}
+
+@keyframes linkshover {
+	0% {
+		color: white;
+	}
+	25% {
+		background: linear-gradient(to left, white, white, gray);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	50% {
+		background: linear-gradient(to left, white, gray);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	75% {
+		background: linear-gradient(to left, white, gray, gray);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	100% {
+		color: gray;
+	}
+}
+
+@keyframes linksactive {
+	0% {
+		color: gray;
+	}
+	25% {
+		background: linear-gradient(to left, gray, gray, #880808);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	50% {
+		background: linear-gradient(to left, gray, #880808);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	75% {
+		background: linear-gradient(to left, gray, #880808, #880808);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	100% {
+		color: #880808;
+	}
+}
+/*For Design Blocks*/
+
+.designr {
+	border-bottom: 15px solid #880808;
+	height: 0;
+	width: 500px;
+	float: right;
+	display: block;
+	margin: 0px 20px;
+}
+
+.designl {
+	border-bottom: 15px solid #880808;
+	height: 0;
+	width: 500px;
+	float: left;
+	display: block;
+	margin: 0px 20px;
+}
+
+/*For Navigation and Header*/
+
+header {
+	z-index: 100;
+	right: 0;
+	left: 0;
+	position: fixed;
+}
+
+.logocontainer {
+	display: flex;
+	justify-content: center;
+}
+
+.headlogo {
+	display: flex;
+	width: 400px;
+	margin: 0 auto;
+	padding-bottom: 2px;
+	top: 0;
+	flex-wrap: center;
+	justify-content: center;
+}
+
+.header {
+	justify-content: center;
+	display: flex;
+	background-color: black;
+	height: 110px;
+}
+
+nav span {
+	width: 500px;
+	display: flex;
+	background-color: black;
+	flex-wrap: center;
+	justify-content: center;
+	transform: translateY(5px)
+}
+
+.navtext {
+	font-weight: bold;
+}
+
+.nav {
+	display: flex;
+	width: 200px;
+	font-size: 20px;
+	flex-wrap: center;
+	justify-content: center;
+}
+
+/*For the Article*/
+
+.title {
+	font-size: 80px;
+	margin: 0px 50px;
+	font-weight: bold;
+}
+
+.author {
+	font-size: 15px;
+	color: gray;
+	text-indent: 100px;
+}
+
+.body {
+	display: flex;
+	text-indent: 60px;
+	line-height: 30px;
+	font-size: 20px;
+	text-align: justify;
+	background-color: white;
+	border-radius: 25px;
+	color: black;
+	padding: 10px 20px;
+	margin-right: 20px;
+	width: 700px;
+}
+
+.container {
+	display: flex;
+	margin: 0px 50px;
+}
+
+.articlecovercontainer {
+	display: flex;
+}
+
+.articlecover {
+	border-radius: 25px;
+}
+
+/*For the more articles section*/
+
+.morearticles {
+	display: flex;
+	justify-content: center;
+}
+
+.morearticles a {
+	flex-wrap: wrap;
+	margin: 0px 10px;
+	width: 230px;
+	text-align: center;
+	font-size: 25px;
+	height: 230px;
+	border-radius: 25px;
+	position: relative;
+	border-radius: 25px;
+	justify-content: center;
+}
+
+.morearticles a div {
+	position: relative;
+	background-color: #262626;
+	width: 230px;
+	height: 250px;
+	flex-wrap: wrap;
+	justify-content: center;
+	opacity: 70%;
+	border-radius: 25px;
+}
+
+.morearticles img {
+	position: absolute;
+	width: 230px;
+	height: 250px;
+	object-fit: cover;
+	border-radius: 25px;
+	transform: translateX(-114.25px);
+}
+
+.morearticles a:hover div {
+	position: relative;
+	background-color: #333232;
+	width: 230px;
+	height: 250px;
+	flex-wrap: wrap;
+	justify-content: center;
+	opacity: 70%;
+	border-radius: 25px;
+	transition: background-color 0.2s;
+}
+
+.morearticles a:active div {
+	position: relative;
+	background-color: #333232;
+	width: 230px;
+	height: 250px;
+	flex-wrap: wrap;
+	opacity: 95%;
+	justify-content: center;
+	border-radius: 25px;
+	transition: opacity 0.2s;
+}
+
+/*For the footer */
+
+ul {
+	margin-left: 95px;
+}
+
+footer li {
+	list-style-type: none;
+	float: left;
+	padding-left: 37px;
+	padding-right: 37px;
+	align-content: center;
+}
+
+footer div {
+	padding-left: 400px;
+	align-content: center;
+}
+
+footer div img {
+	height: 30px;
+}
+
+footer a:hover {
+	opacity: 0.5;
+}
+
+footer>center>img {
+	width: 400px;
+}
+
+footer hr {
+	transform: translateY(-20px);
+}
+
+span {
+	padding-bottom: 10px;
+}
